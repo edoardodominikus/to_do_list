@@ -1,0 +1,28 @@
+{
+  "name": "to_do_list",
+  "version": "1.0.0",
+  "description": "Practice using html, scss, javascript and bundled with webpack.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edoardodominikus/to_do_list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edoardodominikus/to_do_list/issues"
+  },
+  "homepage": "https://github.com/edoardodominikus/to_do_list#readme",
+  "devDependencies": {
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
