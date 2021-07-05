@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/edoardodominikus/to_do_list#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.4",
+    "browser-sync-webpack-plugin": "^2.3.0",
     "css-loader": "^5.2.6",
     "sass": "^1.35.1",
     "sass-loader": "^12.1.0",

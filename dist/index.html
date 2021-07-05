@@ -7,8 +7,27 @@
         <script src="https://unpkg.com/lodash@4.17.20"></script>
     </head>
     <body>
-        <p>HELLOO</p>
-        <!-- <script src="main.js"></script> -->
+        <div id="myDIV" class="header">
+            <h1>Todo List</h1>
+            <div>
+                <p> Get things done,one by one. </p>
+            </div>
+        </div>
+        <div>
+            <input type="text" id="myInput" placeholder="What do you need to do today?">
+            <span id="addbutton" class="addBtn">Add</span>
+            
+        </div>
+        <div>
+            <ul id="myUL">
+                <li>Learn VueJs</li>
+                <li class="checked">Go to the gym</li>
+                <li>Code a to do list</li>
+                <li>Continue Learning</li>
+            </ul>
+        </div>
+
+
         <script src="bundle.js"></script>
     </body>
 </html>
