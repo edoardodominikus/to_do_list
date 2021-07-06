@@ -28,7 +28,7 @@ function isEmpty(obj) {
 //         document.getElementById("myUL").appendChild(li);
 //     }
 // }
-
+//asd
 if(!isEmpty(localStorage.getItem('data')))
 {   var dict = localStorage.getItem('data');
     var dict2 = JSON.parse(dict);
