@@ -33,7 +33,7 @@ module.exports = {
         // browse to http://localhost:3000/ during development,
         // ./public directory is being served
         host: 'localhost',
-        port: 9000,
+        port: 8000,
         server: { baseDir: ['dist'] }
       })
     ]
