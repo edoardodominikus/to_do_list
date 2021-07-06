@@ -30,13 +30,12 @@ function isEmpty(obj) {
 // }
 //asd
 if(!isEmpty(localStorage.getItem('data')))
-{   var dict = localStorage.getItem('data');
-    var dict2 = JSON.parse(dict);
-    for(let key in dict2)
+{   var dict = JSON.parse(localStorage.getItem('data'));
+    for(let key in dict)
     {
         var li = document.createElement('li');
         var x = document.createTextNode(key);
-        var y = document.createTextNode(dict2[key]);
+        var y = document.createTextNode(dict[key]);
         li.appendChild(x);
         li.appendChild(document.createTextNode(" "));
         li.appendChild(y);
@@ -92,6 +91,12 @@ function newElement() {
       close[i].onclick = function() {
         var div = this.parentElement;
         div.style.display = "none";
+        var temp = div.textContent.split(" ")[0];
+        //console.log(div.textContent.split(" ")[0]);
+        //console.log(temp);
+        delete dict[temp];
+        localStorage.removeItem('data');
+        localStorage.setItem('data',JSON.stringify(dict));
       }
     }
 }
@@ -109,11 +114,19 @@ for(var i=0;i<NodeList.length;i++)
 }
 //click on a x button to hide current item in list
 var close = document.getElementsByClassName("close");
+
 for(var i=0;i<close.length;i++)
-{
+{   console.log(close);
     close[i].onclick = function(){
         var div = this.parentElement;
         div.style.display = "none";
+        var temp = div.textContent.split(" ")[0];
+        //console.log(div.textContent.split(" ")[0]);
+        //console.log(temp);
+        delete dict[temp];
+        localStorage.removeItem('data');
+        localStorage.setItem('data',JSON.stringify(dict));
+
     }
 }
 
